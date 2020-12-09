@@ -1,0 +1,155 @@
+@media screen and (max-width: 420px) {
+  .wrapper {
+    width: 100%;
+  }
+  /*
+        HEADER
+                */
+  header nav {
+    margin-top: 0;
+  }
+  header .topheader nav a {
+    font-size: 1.5em;
+    padding: 0;
+    color: white;
+  }
+  /*
+        MAIN
+             */
+  main {
+    flex-direction: column;
+  }
+  main figure {
+    display: none;
+  }
+  .banniere .hover p {
+    font-size: small;
+  }
+  .banniere .hover a {
+    display: none;
+  }
+  .art_1, aside {
+    width: 100%;
+  }
+  .art_1 {
+    padding: 1em;
+  }
+  .social {
+    margin: 5em 0em 1em 3em;
+  }
+  .up {
+    right: 45%;
+  }
+  /*
+        FOOTER
+                */
+  footer {
+    flex-direction: column;
+  }
+  footer h4 {
+    text-align: center;
+  }
+  .news, .gallery, .partenaire {
+    width: 100%;
+  }
+  form {
+    margin: 0em 7em;
+  }
+  .sinscrire {
+    margin-top: 1em;
+  }
+  .gallery_content, .partenaire_content {
+    justify-content: space-around;
+  }
+  /*
+      BURGER
+            */
+  .burger {
+    /* icone burger */
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    z-index: 4;
+    top: 5%;
+    right: 1%;
+    cursor: pointer;
+  }
+  .burger span {
+    /* trait du milieu */
+    position: absolute;
+    background-color: #000;
+    border-radius: 1px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 8px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .burger:before, .burger:after {
+    /* trait haut et bas */
+    content: "";
+    background-color: #000;
+    border-radius: 1px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .burger:before {
+    /* positionnement bar du haut */
+    top: 0;
+  }
+  .burger:after {
+    /* positionnement bar du bas */
+    bottom: 1px;
+  }
+  /* MOUVEMENT CROIX */
+  .burger.active span {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  .burger.active:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  .burger.active:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -1000px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: #75b90098;
+  }
+  .menu.active {
+    top: 0px;
+  }
+  .menu__link {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+}
