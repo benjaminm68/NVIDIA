@@ -1,5 +1,5 @@
 # NVIDIA
-Exercice durant ma formation profesionelle développeur web/web mobile.
+Exercice durant ma formation professionelle développeur web/web mobile.
 
 REPRODUCTION D'UNE MAQUETTE GRAPHIQUE
 
